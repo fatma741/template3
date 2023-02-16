@@ -1,0 +1,190 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+.nav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 12%;
+    height: 100%;
+    position: fixed;
+    right: 0;
+    z-index: 9;
+    transition: 3.5s;
+    display: -moz-inline-stack;
+}
+
+
+.mini-bar
+{   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.4);
+    width: 45%;
+    height: 35%;
+    position: absolute;
+    right:455px;
+    top: 385px;
+    opacity: 0;
+    z-index: 9;
+    transition: 3.5s;
+}
+.mini-bar li
+{
+    line-height: 70px;
+}
+
+
+.games:hover .mini-bar
+{
+    opacity: 1;
+}
+.arrow
+{
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 3px;
+}
+
+
+.down
+{
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+
+
+
+.list-nav ,.mini-bar
+{
+      color: white;
+      font-size: 20px;
+      line-height: 50px;
+      text-align: center;     
+}
+
+.list-nav li
+{
+     list-style-type: none; 
+}
+    
+.nav:hover  .list-nav img
+{
+    height: 120px;
+       
+}
+    
+.list-nav li:hover
+{
+    color: rgba(247, 7, 118, 1);
+}
+
+ .list-nav img
+ {
+    height: 50px;
+    animation:img  2.5s infinite alternate;
+     transition: 3s;
+}
+
+ @keyframes   img 
+{
+ 0%{transform :rotate(0deg);}
+50%{transform :rotate(160deg);}
+100%{transform :rotate(0deg);}
+        
+}
+    
+ .nav:hover
+{
+     width: 30%;
+    text-align: center;
+            
+}
+
+
+
+    
+.parant
+{
+   width: 100%;
+   position: relative;
+}
+.background
+{
+    width: 100%;
+    
+}
+.background img
+{
+   width: 100%;
+   height: 100vh;
+    
+}
+.overlay
+{
+    position: absolute;
+    top:0px;
+    bottom: 0px;
+    right: 0px;
+    left: 0px;
+    text-align: center;
+    background-image:linear-gradient(90deg, rgba(247, 7, 118, 0.7), black);
+    
+    
+    
+    
+}
+span
+{
+    color:rgba(247, 7, 118, 1);
+}
+.caption{
+    margin-top: 285px;
+    color: white;
+    line-height: 43px;
+    
+}
+
+
+
+.button
+{
+    background-color: transparent;
+    height: 48px;
+    width: 108px;
+    border:1.2px solid rgba(247, 7, 118, 1);
+    border-radius: 15px;
+    color: white;
+    font-size:15px;
+    transition: 1.5s;
+
+   
+}
+.button:hover
+{
+    background-color:rgba(247, 7, 118, 1) ;
+}
+ 
+.button:not(:hover)
+{
+    animation: reverse1 2s infinite ;
+}
+
+@keyframes reverse1
+{
+   0%{background-color:rgba(247, 7, 118, 1) ; border-color: rgba(247, 7, 118, 1);}
+   50%{border-color: white;}
+   100%{background-color: transparent; border-color: rgba(247, 7, 118, 1);}
+} 
+
+
+
